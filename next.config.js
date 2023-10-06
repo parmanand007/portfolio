@@ -7,7 +7,10 @@ const nextConfig = {
                 protocol:"https"
             }
         ]
-    }
+    },
+    experimental:{
+        serverActions:true,
+    },
 }
 
 module.exports = nextConfig
