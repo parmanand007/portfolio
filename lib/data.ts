@@ -35,28 +35,36 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Graduation",
+    location: "Lucknow,India",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I completed my Bachelor of Computer Aplications  from Babu Banarsi Das University,Lucknow UttarPradesh.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2018-2021",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Post Graduation",
+    location: "Lucknow,India",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I completed my Master of Computer Aplication from Institue of Engineering & Technology,Lucknow UttarPradesh.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2021 - 2023",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Web Developer Associate",
+    location: "Lucknow",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "During my internship,i created different plugins and system design of new feature in django,python using graphql and with the help of jenkins and docker",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "04/2023 - 10/2023",
+  },
+  {
+    title: "Web Developer",
+    location: "Lucknow",
+    description:
+      "I'm now a web developer. My stack includes Django,Python,GraphQL,Postgresql,React, Next.js, Tailwind,and MongoDB. I'm open to full-time opportunities.",
+    icon: React.createElement(FaReact),
+    date: "11/2023 - present",
   },
 ] as const;
 
