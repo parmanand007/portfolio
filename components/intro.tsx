@@ -68,7 +68,7 @@ const Intro = () => {
         >Contact me here<BsArrowRight className='opacity-70 group-hover:translate-x-1 transition'/></Link>
     
     <a className='group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition  cursor-pointer  border-black/10 '
-    href='/Resume -Sept-2023.pdf' download
+    href='/parmanand_prajapati.pdf' download
     >Download CV {" "}<HiDownload  className='opacity-60 group-hover:translate-y-1 transition'/></a>
 
     <a className='bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition  cursor-pointer  border-black/10 '
