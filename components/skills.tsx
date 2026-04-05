@@ -27,13 +27,17 @@ export default function Skills() {
     <section
       id="skills"
       ref={ref}
-      className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
+      className="mb-28 max-w-5xl scroll-mt-28 text-center sm:mb-40"
     >
-      <SectionHeading>My skills</SectionHeading>
-      <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
+      <SectionHeading>Core Skills</SectionHeading>
+      <p className="mx-auto mb-10 max-w-3xl text-base leading-8 text-slate-600 dark:text-slate-300">
+        I focus on backend-first engineering, but I&apos;m comfortable moving
+        across the stack when the product needs it.
+      </p>
+      <ul className="flex flex-wrap justify-center gap-3 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
           <motion.li
-            className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
+            className="rounded-2xl border border-white/60 bg-white/75 px-5 py-3 text-sm font-semibold text-slate-700 shadow-lg shadow-slate-900/5 backdrop-blur dark:border-white/10 dark:bg-white/5 dark:text-white/80"
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"

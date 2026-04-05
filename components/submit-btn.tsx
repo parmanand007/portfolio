@@ -5,8 +5,8 @@ import { experimental_useFormStatus as useFormStatus } from "react-dom";
 const SubmitBtn = () => {
     const {pending}=useFormStatus();
     return (
-    <button type="submit" className=" group flex h-[3rem] w-[8rem] items-center justify-center gap-2 bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 active:scale-105 hover:bg-gray-950 
-    dark:bg-white dark:bg-opacity-10 disabled:scale-100 disabled:bg-opactiy-65
+    <button type="submit" className="group flex h-[3.2rem] w-[10rem] items-center justify-center gap-2 rounded-full bg-slate-950 text-sm font-semibold text-white outline-none transition-all hover:-translate-y-0.5 hover:bg-slate-800 focus:scale-105 active:scale-[0.98]
+    dark:bg-white dark:bg-opacity-10 disabled:scale-100 disabled:opacity-65
     ">
         {
             pending ? (<div className='h-5 w-5 animate-spin rounded-full border-b-2 border-white'></div>):(

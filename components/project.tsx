@@ -28,43 +28,43 @@ export default function Project({
         scale: scaleProgess,
         opacity: opacityProgess,
       }}
-      className="group mb-3 sm:mb-8 last:mb-0"
+      className="group last:mb-0"
     >
-      <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem] ">
-          <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
+      <section className="relative overflow-hidden rounded-[2rem] border border-white/60 bg-white/75 shadow-xl shadow-slate-900/5 backdrop-blur transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-slate-900/10 dark:border-white/10 dark:bg-white/5">
+        <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-cyan-400 via-sky-500 to-indigo-500" />
+        <div className="flex flex-col gap-8 p-6 sm:h-[21rem] sm:flex-row sm:items-center sm:p-10">
+          <div className="flex h-full flex-col sm:max-w-[52%]">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.24em] text-slate-500 dark:text-slate-300">
+              Selected Work
+            </p>
+            <h3 className="text-2xl font-bold text-slate-950 dark:text-white sm:text-3xl">
+              {title}
+            </h3>
+            <p className="mt-4 leading-7 text-slate-600 dark:text-white/70">
             {description}
-          </p>
-          <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
-            {tags.map((tag, index) => (
-              <li
-                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
-                key={index}
-              >
-                {tag}
-              </li>
-            ))}
-          </ul>
+            </p>
+            <ul className="mt-6 flex flex-wrap gap-2 sm:mt-auto">
+              {tags.map((tag, index) => (
+                <li
+                  className="rounded-full border border-slate-200 bg-slate-950 px-3 py-1 text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-white dark:border-white/10 dark:bg-white/10 dark:text-white/80"
+                  key={index}
+                >
+                  {tag}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="relative flex-1">
+            <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-cyan-400/20 via-sky-500/10 to-indigo-500/20 blur-2xl" />
+            <Image
+              src={imageUrl}
+              alt={`${title} preview`}
+              quality={95}
+              className="relative w-full rounded-[1.5rem] border border-slate-200/80 shadow-2xl shadow-slate-900/10 transition duration-300 group-hover:scale-[1.02] dark:border-white/10"
+            />
+          </div>
         </div>
-
-        <Image
-          src={imageUrl}
-          alt="Project I worked on"
-          quality={95}
-          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
-        transition 
-        group-hover:scale-[1.04]
-        group-hover:-translate-x-3
-        group-hover:translate-y-3
-        group-hover:-rotate-2
-
-        group-even:group-hover:translate-x-3
-        group-even:group-hover:translate-y-3
-        group-even:group-hover:rotate-2
-
-        group-even:right-[initial] group-even:-left-40"
-        />
       </section>
     </motion.div>
   );

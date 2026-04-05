@@ -35,66 +35,74 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduation",
-    location: "Lucknow,India",
+    title: "Bachelor of Computer Applications",
+    location: "BBDU Lucknow, Uttar Pradesh",
     description:
-      "I completed my Bachelor of Computer Aplications  from Babu Banarsi Das University,Lucknow UttarPradesh.",
+      "Built a strong programming foundation while studying computer science and software development fundamentals.",
     icon: React.createElement(LuGraduationCap),
     date: "2018-2021",
   },
   {
-    title: "Post Graduation",
-    location: "Lucknow,India",
+    title: "Master of Computer Applications",
+    location: "IET Lucknow, Uttar Pradesh",
     description:
-      "I completed my Master of Computer Aplication from Institue of Engineering & Technology,Lucknow UttarPradesh.",
+      "Completed MCA and secured AIR 81 in the UPMCA entrance exam among 50,000+ candidates statewide.",
     icon: React.createElement(CgWorkAlt),
     date: "2021 - 2023",
   },
   {
     title: "Web Developer Associate",
-    location: "Lucknow",
+    location: "Brimo Software Solution, Lucknow",
     description:
-      "During my internship,i created different plugins and system design of new feature in django,python using graphql and with the help of jenkins and docker",
+      "Built loyalty features such as wallets, coupons, and referrals, and helped deliver a multitenant SaaS platform for 15+ client deployments.",
     icon: React.createElement(FaReact),
-    date: "04/2023 - 10/2023",
+    date: "Mar 2023 - Aug 2023",
   },
   {
     title: "Web Developer",
-    location: "Lucknow",
+    location: "Brimo Software Solution, Lucknow",
     description:
-      "I'm now a web developer. My stack includes Django,Python,GraphQL,Postgresql,React, Next.js, Tailwind,and MongoDB. I'm open to full-time opportunities.",
+      "Deployed a loyalty program for 10,000+ users, integrated Stripe payments for 2,000+ monthly transactions, and improved load time by 45% with query optimization.",
     icon: React.createElement(FaReact),
-    date: "11/2023 - present",
+    date: "Sep 2023 - Feb 2024",
+  },
+  {
+    title: "Backend Developer",
+    location: "DoctusTech, Remote",
+    description:
+      "Architected Django REST APIs for a healthcare SaaS used by 5,000+ medical professionals, improved response time by 50% with Redis caching, and reduced workflow time by 40%.",
+    icon: React.createElement(FaReact),
+    date: "Feb 2024 - Present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "Update JWT Algorithm",
+    title: "Healthcare SaaS Platform",
     description:
-      "I updated HSA256 JWT algorithm to RSA256 algorithm of legacy codebase which in python django",
-    tags: ["Django", "Python", "GraphQL", "Saleor", "Postgresql","Docker"],
+      "Designed backend workflows and admin tooling for a production healthcare platform serving thousands of U.S. professionals, with a strong focus on API performance and automation.",
+    tags: ["Django", "DRF", "PostgreSQL", "Redis", "React"],
     imageUrl: corpcommentImg,
   },
   {
-    title: "System Desgin For  Web App ",
+    title: "Multitenant Loyalty System",
     description:
-      "From scratch create a plugin which can implemented on any website.Feature likes wallet,referal,coupon code creation & redemption are implemented.",
-    tags: ["Django", "Python", "Pgsql"],
+      "Built loyalty, referral, wallet, and coupon features for a reusable SaaS product that supported 15+ client implementations with lower infrastructure cost.",
+    tags: ["Django", "Python", "GraphQL", "PostgreSQL", "Docker"],
     imageUrl: rmtdevImg,
   },
   {
-    title: "Multitenancy in Existing System",
+    title: "Stratix",
     description:
-      "Scale existing codebase for multiple clients,create dashboard which support multitenant feature",
-    tags: ["Django", "Python", "Postgresql", "Jenkins", "Docker","Graphql"],
+      "Developed a college marketplace with authentication, listings, and messaging, combining backend architecture with a practical full-stack product experience.",
+    tags: ["NestJS", "React", "PostgreSQL", "Auth", "Messaging"],
     imageUrl: wordanalyticsImg,
   },
   {
-    title: "Apis for Analytics",
+    title: "AI Workflow Tools",
     description:
-      "Create multiple apis in node,express & mongodb used for analytics such as top location,landing page,visitor-count,new-vs returning customer and sales etc.",
-    tags: ["Node js", "Express", "JavaScript", "MongoDb"],
+      "Created AI-driven utilities including a timesheet assistant and an insurance RAG workflow to automate information retrieval and internal productivity tasks.",
+    tags: ["Python", "LangChain", "RAG", "Node.js", "Automation"],
     imageUrl: wordanalyticsImg,
   },
 ] as const;
@@ -102,9 +110,11 @@ export const projectsData = [
 export const skillsData = [
   "Python",
   "Django",
+  "DRF",
   "Git",
   "GraphQL",
   "PostgreSQL",
+  "Redis",
   "HTML",
   "CSS",
   "JavaScript",
@@ -112,5 +122,9 @@ export const skillsData = [
   "Next.js",
   "MongoDB",
   "Express",
-  "Flutter",
+  "NestJS",
+  "Docker",
+  "AWS",
+  "Stripe API",
+  "LangChain",
 ] as const;
