@@ -72,7 +72,7 @@ export default function IntroModern() {
           initial={{ opacity: 0, y: 28 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          I build scalable systems and high-performance backend infrastructure for modern products.
+          I build scalable systems and high-performance infrastructure for modern products.
         </motion.h1>
 
         <motion.p
