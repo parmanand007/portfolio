@@ -97,8 +97,7 @@ export const metadata: Metadata = {
   },
 
   verification: {
-    // Add Google Search Console verification token here when you have it
-    // google: 'your-verification-token',
+    google: 'UhYhrlI_4UW_8vgPVS5ZJGtUIM_Ght1cwDfR4XbussA',
   },
 }
 
@@ -107,7 +106,7 @@ const jsonLd = {
   '@type': 'Person',
   name: 'Parmanand Prajapati',
   url: BASE_URL,
-  email: 'parmanandprajapati0009@gmail.com',
+  email: 'parmanandprajapati006@gmail.com',
   jobTitle: 'Full Stack Developer',
   description:
     'Full Stack Developer with 4+ years building scalable Python/Django backends, SaaS platforms, and AI tools across healthcare, e-commerce, and insurance.',
